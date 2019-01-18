@@ -30,6 +30,10 @@ python app.py
 
 Open browser at [localhost:5000/check](localhost:5000/check) and see how it work
 
+## ScreenShots
+
+![Giao diện chương trình](asserts/Screenshot_1.png)
+
 ## Data
 
 You can find data at `data_crawler/data`
