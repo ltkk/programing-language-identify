@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Programing Language Identification</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://nguyenvanhieu.vn/wp-content/uploads/2018/08/pointer.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function clear_result() {
+            $('.result').text('')
+            $('textarea').text('')
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Programing Language Identification Demo</h2>
+    <p>Detect programing language from source code</p>
+    <form method="post">
+        <div class="form-group">
+            <label for="code">Just paste your code here:</label>
+            <textarea class="form-control" rows="5" name="code" id="code">{{code}}</textarea>
+            <input type="submit" value="Submit" class="btn btn-success btn-lg" style="margin-top: 20px;">
+            <input type="reset" value="Reset" class="btn btn-default btn-lg" style="margin-top: 20px;"
+                   onclick="clear_result()">
+        </div>
+    </form>
+    <div class="result">
+        <h4>Predict result:</h4>
+        {% if language %}
+        <p>Programing language: <strong>{{ language }}</strong></p>
+        {% endif %}
+        {% if score %}
+        <p>Score: <em>{{ score }}</em></p>
+        {% endif %}
+        {% if error %}
+        <p style="color: red;font-weight: bold;">{{error}}</p>
+        {% endif %}
+    </div>
+</div>
+<div class="container" style="margin-top:20px;">
+    <p>List of supported programing languages:</p>
+    <pre>tsql python scala haskell perl swift c++ bash html css matlab shell php go c# c ruby asp.net r javascript vb.net java</pre>
+    <p>Made with <span style="color: red;">❤</span> by <a href="https://nguyenvanhieu.vn">Nguyễn Văn Hiếu</a>.</p>
+</div>
+</body>
+</html>
