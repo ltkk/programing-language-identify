@@ -4,7 +4,7 @@ Just give me your source code in plain text. I will guess you what programing la
 
 List of supported programing languages:
 ```text
-c c++ java c# html css javascript
+tsql python scala haskell perl swift c++ bash html css matlab shell php go c# c ruby asp.net r javascript vb.net java
 ```
 
 ### Prerequisites
@@ -18,8 +18,43 @@ c c++ java c# html css javascript
 pip install -r requirements.txt
 ```
 
+### Training `classifier`
+```text
+- Prepare train-test set
 
-End with an example of getting some data out of the system or using it for a little demo
+python prepare_data.py
+
+- Train
+
+python train.py
+
+```
+
+### Accuracy
+
+```text
+{
+  "__lb__lang-r": 0.89,
+  "__lb__lang-sh": 0.81,
+  "__lb__lang-php": 0.85,
+  "__lb__lang-c": 0.7,
+  "__lb__lang-cpp": 0.78,
+  "__lb__lang-rb": 0.82,
+  "__lb__lang-java": 0.91,
+  "__lb__lang-scala": 0.83,
+  "__lb__lang-vb": 0.73,
+  "__lb__lang-sql": 0.93,
+  "__lb__lang-hs": 0.9,
+  "__lb__lang-swift": 0.94,
+  "__lb__lang-html": 0.85,
+  "__lb__lang-matlab": 0.84,
+  "__lb__lang-perl": 0.79,
+  "__lb__lang-css": 0.97,
+  "__lb__lang-py": 0.92,
+  "__lb__lang-cs": 0.7,
+  "__lb__lang-golang": 0.86
+}
+```
 
 ## Running the tests
 
