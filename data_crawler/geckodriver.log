@@ -17371,3 +17371,38 @@ console.error: BroadcastService:
 [GPU 5212, C
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1547863551788	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\hieun\\AppData\\Local\\Temp\\rust_mozprofile.BI3J6aBqLo1u"
+1547863553676	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1547863553676	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1547863557629	Marionette	INFO	Listening on port 53873
+1547863557833	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/amp4ads-v0.js, line 291: NS_ERROR_FAILURE: 
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/v0/amp-analytics-0.1.js, line 179: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/v0/amp-analytics-0.1.js, line 179: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/v0/amp-analytics-0.1.js, line 179: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/amp4ads-v0.js, line 291: NS_ERROR_FAILURE: 
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/amp4ads-v0.js, line 291: NS_ERROR_FAILURE: 
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/amp4ads-v0.js, line 291: NS_ERROR_FAILURE: 
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/amp4ads-v0.js, line 291: NS_ERROR_FAILURE: 
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/v0/amp-analytics-0.1.js, line 179: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://cdn.ampproject.org/rtv/011812261943070/v0/amp-analytics-0.1.js, line 179: NS_ERROR_NOT_INITIALIZED: 
+1547868458690	Marionette	INFO	Stopped listening on port 53873
+[Parent 9208, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 9208, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10184, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[Child 15264, Chrome_ChildThread] WARN
+ING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15264, Chrome_ChildThread] WARNING: pipe [Child 12808, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12808, Chrome_ChildT
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 72
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
