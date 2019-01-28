@@ -31,7 +31,7 @@ python train.py
 ```
 
 ### Accuracy
-
+- Fasttext
 ```text
 {
   "__lb__lang-r": 0.89,
@@ -55,7 +55,25 @@ python train.py
   "__lb__lang-golang": 0.86
 }
 ```
+- Multinomial NB
+```text
+   micro avg       0.82      0.82      0.82     18512
+   macro avg       0.86      0.77      0.80     18512
+weighted avg       0.83      0.82      0.81     18512
+```
 
+- Linear SVC
+```text
+   micro avg       0.87      0.87      0.87     18512
+   macro avg       0.86      0.85      0.85     18512
+weighted avg       0.87      0.87      0.86     18512
+```
+- SGD Classifier
+```text
+   micro avg       0.84      0.84      0.84     18512
+   macro avg       0.84      0.81      0.83     18512
+weighted avg       0.84      0.84      0.84     18512
+```
 ## Running the tests
 
 Go to app solution and run with command:
